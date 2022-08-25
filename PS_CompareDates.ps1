@@ -1,4 +1,5 @@
 #This PS script compares last write date to a file with today's date and  writes the result (0 or 1, with the timestamp of the action) to a log.
+#Reccurence should be handled with task scheduler.
 
 $LMD = (Get-Item "<path to a file>").LastWriteTime.ToString("MM/dd/yyyy")
 
